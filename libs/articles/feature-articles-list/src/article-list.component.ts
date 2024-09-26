@@ -1,6 +1,5 @@
 import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
 import { ArticleListItemComponent } from './article-list-item/article-list-item.component';
 import { PagerComponent } from '@realworld/ui/components';
 import { ArticlesListStore } from '@realworld/articles/data-access';
@@ -14,7 +13,6 @@ import { ArticlesListStore } from '@realworld/articles/data-access';
 })
 export class ArticleListComponent {
   private readonly articlesListStore = inject(ArticlesListStore);
-  private readonly router = inject(Router);
 
   $totalPages = this.articlesListStore.totalPages;
   $articles = this.articlesListStore.articles.entities;
@@ -27,10 +25,6 @@ export class ArticleListComponent {
 
   unFavorite(slug: string) {
     this.articlesListStore.unFavouriteArticle(slug);
-  }
-
-  navigateToArticle(slug: string) {
-    this.router.navigate(['/article', slug]);
   }
 
   setPage(page: number) {

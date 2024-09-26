@@ -2,7 +2,6 @@
   @for (article of $articles(); track article.slug) {
     <cdt-article-list-item
       data-e2e-id="article-list"
-      (navigateToArticle)="navigateToArticle($event)"
       (unFavorite)="unFavorite($event)"
       (favorite)="favorite($event)"
       [article]="article"

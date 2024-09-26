@@ -64,10 +64,6 @@ As you can see from the route configuration, the two main pages in the app are l
   loadComponent: () => import('@realworld/auth/feature-auth').then((m) => m.RegisterComponent),
 },
 {
-  path: 'article',
-  loadChildren: () => import('@realworld/articles/article').then((m) => m.ARTICLE_ROUTES),
-},
-{
   path: 'settings',
   loadComponent: () =>
     import('@realworld/settings/feature-settings').then((settings) => settings.SettingsComponent),

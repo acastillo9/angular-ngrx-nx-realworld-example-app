@@ -42,7 +42,6 @@
     "@nx/angular": "19.6.5",
     "core-js": "3.31.0",
     "eslint-plugin-ngrx": "2.1.4",
-    "marked": "5.0.1",
     "rxjs": "7.8.1",
     "tslib": "2.6.2"
   },
@@ -66,7 +65,6 @@
     "@nx/workspace": "19.6.5",
     "@schematics/angular": "18.2.1",
     "@types/jest": "29.5.12",
-    "@types/marked": "4.3.1",
     "@types/node": "18.19.21",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",

@@ -29,10 +29,6 @@ export const appConfig: ApplicationConfig = {
           loadComponent: () => import('@realworld/auth/feature-auth').then((m) => m.RegisterComponent),
         },
         {
-          path: 'article',
-          loadChildren: () => import('@realworld/articles/article').then((m) => m.ARTICLE_ROUTES),
-        },
-        {
           path: 'settings',
           loadComponent: () =>
             import('@realworld/settings/feature-settings').then((settings) => settings.SettingsComponent),
